@@ -2,7 +2,22 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        mainWhite: "#FCFCFE",
+        mainColor: "#703BF7",
+      },
+      container: {
+        margin: "auto",
+        center: true,
+      },
+      screens:{
+            'sm':{"max":'767px'}
+      },
+      fontFamily: {
+        Urbanist: "Urbanist",
+      },
+    },
   },
   plugins: [],
 };
