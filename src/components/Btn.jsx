@@ -1,8 +1,24 @@
-const Btn = ({ style, children }) => {
+const Btn = ({
+  style,
+  children,
+  bg = "#703BF7",
+  rounded = "0.5rem",
+  text = "#FFF",
+  px = "16px",
+  py = "16px",
+}) => {
+  const styleBtn = {
+    backgroundColor: bg,
+    borderRadius: rounded,  
+    color: text,
+    padding:`${py} ${px}`,
+
+  };
   return (
     <button
-      className={` ${style} cursor-pointer  btn bg-mainColor hover:bg-[#692ffe] `}
-    > 
+      className={` ${style}  btn  hover:bg-[#692ffe] `}
+     
+    >
       {children}
     </button>
   );
